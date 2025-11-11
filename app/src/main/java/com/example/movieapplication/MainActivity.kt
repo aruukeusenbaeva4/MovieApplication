@@ -17,7 +17,5 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, MainFragment()).commit()
     }
 }

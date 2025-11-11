@@ -35,10 +35,19 @@
         android:layout_marginStart="12dp"/>
 
     <TextView
-        android:id="@+id/tv_info"
+        android:id="@+id/tv_desc"
         android:text="1972  2h 55m"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:text="Action/Thriller"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
         app:layout_constraintStart_toStartOf="@id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
