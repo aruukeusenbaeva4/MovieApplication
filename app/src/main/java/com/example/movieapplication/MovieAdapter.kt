@@ -3,6 +3,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.movieapplication.data.model.MovieModel
 import com.example.movieapplication.databinding.ItemMovieBinding
 
 class MovieAdapter(val movieList: ArrayList<MovieModel>, val onClick: (MovieModel) -> Unit):

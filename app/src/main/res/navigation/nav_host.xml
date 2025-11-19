@@ -3,26 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_host"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/onBoardFragment">
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.movieapplication.MainFragment"
+        android:name="com.example.movieapplication.ui.ui.main.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
+            app:popUpToSaveState="false"
             android:id="@+id/action_mainFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.movieapplication.DetailFragment"
+        android:name="com.example.movieapplication.ui.ui.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <argument
             android:name="model"
-            app:argType="com.example.movieapplication.MovieModel"/>
+            app:argType="com.example.movieapplication.data.model.MovieModel"/>
     </fragment>
-
-
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.movieapplication.on_board.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" >
+<!--        <action-->
+<!--            android:id="@+id/action_onBoardFragment_to_mainFragment"-->
+<!--            app:destination="@id/mainFragment" />-->
+    </fragment>
 </navigation>

@@ -57,4 +57,10 @@ dependencies {
     //Nav Host
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+
+    //Lottie
+    implementation(libs.lottie)
+
+    //Dot Indicator
+    implementation(libs.dotsindicator)
 }
